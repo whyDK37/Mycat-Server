@@ -4,9 +4,9 @@
 
 	<schema name="TESTDB" checkSQLschema="false" sqlMaxLimit="100">
 
-		<table name="edu_educircle" dataNode="dn1,dn2,dn3" rule="auto-sharding-long" />
+		<table name="edu_educircle" dataNode="dn1,dn2,dn3" rule="sharding-by-murmur2" />
 		<!-- auto sharding by id (long) -->
-		<table name="travelrecord" dataNode="dn1,dn2,dn3" rule="auto-sharding-long" />
+		<table name="travelrecord" dataNode="dn1,dn2,dn3" rule="mod-long" />
 
 		<!-- global table is auto cloned to all defined data nodes ,so can join 
 			with any table whose sharding node is in the same data node -->

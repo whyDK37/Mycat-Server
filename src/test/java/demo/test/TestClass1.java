@@ -23,6 +23,9 @@ public class TestClass1 {
         Statement st = c.createStatement();
         print("test jdbc ", st.executeQuery("select count(*) from travelrecord "));
         System.out.println("OK......");
+
+        st.close();
+        c.close();
     }
 
     static void print(String name, ResultSet res)

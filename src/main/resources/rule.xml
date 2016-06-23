@@ -41,9 +41,21 @@
 			<algorithm>mod-long</algorithm>
 		</rule>
 	</tableRule>
+	<tableRule name="mod-long2">
+		<rule>
+			<columns>username</columns>
+			<algorithm>mod-long</algorithm>
+		</rule>
+	</tableRule>
 	<tableRule name="sharding-by-murmur">
 		<rule>
 			<columns>id</columns>
+			<algorithm>murmur</algorithm>
+		</rule>
+	</tableRule>
+	<tableRule name="sharding-by-murmur2">
+		<rule>
+			<columns>username</columns>
 			<algorithm>murmur</algorithm>
 		</rule>
 	</tableRule>

@@ -83,4 +83,11 @@
     name_ varchar(100),
     user_id varchar(100)
   )
+
+  create table EDU_EduCircle
+  (
+     username             varchar(64) not null comment '用户名',
+     eduCircleTopicID     bigint(20) not null comment '教育圈帖子',
+     createDate           bigint(20) comment '创建时间',
+  );
   ```
